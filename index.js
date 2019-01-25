@@ -19,5 +19,4 @@ function exactMatch(drivers, obj){
       return dman[k] === obj[key]
     }
   });
-  
 }
