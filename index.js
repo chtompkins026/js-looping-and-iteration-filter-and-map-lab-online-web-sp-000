@@ -21,7 +21,7 @@ function exactMatch(drivers, obj) {
   });
 }
 
-function exactMatch(drivers, obj) {
+function exactMatchToList(drivers, obj) {
   return drivers.filter(function (dman) {
     for(const key in obj) {
       return dman[key] === obj[key]
