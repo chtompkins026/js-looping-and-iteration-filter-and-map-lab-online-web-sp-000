@@ -22,9 +22,7 @@ function exactMatch(drivers, obj) {
 }
 
 function exactMatchToList(drivers, obj) {
-  return drivers.filter(function (dman) {
-    for(const key in obj) {
-      return dman[key] === obj[key]
-    }
+  return exactMatch(drivers, obj).map(function (m){
+    return m.name;
   });
 }
